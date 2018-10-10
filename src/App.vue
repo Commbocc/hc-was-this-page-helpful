@@ -18,12 +18,12 @@
 
         <div class="form-check form-check-inline">
           <input v-model="wasItHelpful" class="form-check-input" type="radio" name="field44813009" id="field44813009_1" value="Yes" required>
-          <label class="form-check-label" for="inlineRadio1">Yes</label>
+          <label class="form-check-label" for="field44813009_1">Yes</label>
         </div>
 
         <div class="form-check form-check-inline">
           <input v-model="wasItHelpful" class="form-check-input" type="radio" name="field44813009" id="field44813009_2" value="No" required>
-          <label class="form-check-label" for="inlineRadio2">No</label>
+          <label class="form-check-label" for="field44813009_2">No</label>
         </div>
 
         <div v-if="showComments" class="form-group">
