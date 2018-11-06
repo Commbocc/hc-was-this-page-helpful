@@ -29,7 +29,7 @@
         <div v-if="showComments" class="form-group">
           <hr>
           <label for="field44813218" class="font-weight-bold">Your Feedback:</label>
-          <textarea v-model="comments" class="form-control" id="field44813218" name="field44813218"></textarea>
+          <textarea v-model="comments" class="form-control" id="field44813218" name="field44813218" :required="showComments"></textarea>
           <div class="small form-text text-muted">
             <p>
               Your feedback will be used to improve the County’s website. This form is not for emergencies or individual requests. To report problems or make service requests visit the <a href="https://service.hillsboroughcounty.org/311/" target="_blank">Customer Service Center's website</a>.
