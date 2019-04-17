@@ -1,5 +1,5 @@
 <template>
-  <section id="WasThisPageHelpful" class="bg-white py-5" aria-describedby="WasThisPageHelpfulHeading">
+  <div id="WasThisPageHelpful" class="bg-white py-5" aria-describedby="WasThisPageHelpfulHeading">
     <div class="container">
       <form action="https://www.formstack.com/forms/index.php" target="_blank" method="post" enctype="multipart/form-data" class="text-center">
 
@@ -53,18 +53,24 @@
         </fieldset>
       </form>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      wasItHelpful: null,
-      comments: null,
-      page: window.location.href
-    }
+  install (Vue) {
+    Vue.mixin({
+      components: {
+        HcWasThisPageHelpful: this
+      }
+    })
   },
+  name: 'hc-was-this-page-helpful',
+  data: () => ({
+    wasItHelpful: null,
+    comments: null,
+    page: window.location.href
+  }),
   computed: {
     showComments() {
       return (this.wasItHelpful == "No")
