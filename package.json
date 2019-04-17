@@ -1,10 +1,12 @@
 {
-  "name": "hc-was-this-page-helpful",
+  "name": "@hcflgov/was-this-page-helpful-form",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "Kevin McCarthy <mccarthyk@hcflgov.net>",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "main": "dist/build.js",
+  "homepage": "https://github.com/Commbocc/hc-was-this-page-helpful",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
